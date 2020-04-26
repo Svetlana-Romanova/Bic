@@ -1,3 +1,30 @@
-h1 {
-	color: red;
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+  max-width: 959px;
+  margin: 0 auto;
+}
+nav {
+  background-color: black;
+  height: 62px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 21px;
+    &__item {
+      list-style-type: none;
+    }
+    &__link {
+      text-decoration: none;
+      font-family: Open Sans;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 32px;
+      color: #FFFFFF;
+      opacity: 0.7;
+    }
+  }
 }
