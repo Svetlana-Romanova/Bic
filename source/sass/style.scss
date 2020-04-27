@@ -6,9 +6,10 @@ html {
   margin: 0 auto;
 }
 nav {
-  background-color: black;
   height: 62px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  position: absolute;
   .menu {
     display: flex;
     justify-content: space-between;
@@ -30,6 +31,5 @@ nav {
 }
 .promo {
   min-height: 825px;
-  top: -62px;
-  background: url(img/);
+  background: url("/img/Bike@1x.jpg") center center/cover no-repeat;
 }
