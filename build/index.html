@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Стартовый шаблон</title>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -21,7 +22,23 @@
     </div>
   </nav>
   <section class="promo">
-    
+    <div class="container">
+      <div class="promo__descr">
+        <div class="promo__slogan">
+          <img src="img/icon-logo.png" alt="" class="logo">
+          <div class="promo__header">Мы продаем<br>велосипеды</div>
+          <div class="promo__subheader">Наш магазин отбирает только самые<br>лучшие велосипеды для продажи</div>
+        </div>
+        <div class="promo__consultation">
+          <div class="promo__info">Заполните поля ниже и мы подберем<br>велосипед Вашей мечты</div>
+          <form class="promo__form" action="#">
+            <input name="name" required="" placeholder="Введите Ваше Имя" type="text">
+            <input name="phone" required="" placeholder="Введите Ваш номер телефона" type="text">
+            <button class="promo__btn">Подобрать велосипед мечты</button>
+          </form>
+        </div>
+      </div>
+    </div>
   </section>
 </body>
 </html>

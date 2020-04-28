@@ -32,4 +32,63 @@ nav {
 .promo {
   min-height: 825px;
   background: url("/img/Bike@1x.jpg") center center/cover no-repeat;
+  padding-top: 62px;
+  &__descr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 825px;
+  }
+  &__header {
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 64px;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+    padding-top: 45px;
+  }
+  &__subheader {
+    padding-top: 24px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: -0.005em;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+  }
+  &__info {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    input {
+      height: 48px;
+      width: 327px;
+      border: 1px solid #C9CCD4;
+      border-radius: 6px;
+      margin-bottom: 20px;
+      padding: 0 30px;
+      font-size: 15px;
+      line-height: 24px;
+      color: #1C1C1C;
+    }
+  }
+  &__btn {
+    height: 51px;
+    padding: 0 43px;
+    background: #0AD9C6;
+    border: 1px solid #0AD9C6;
+    border-radius: 6px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: #000000;
+  }
 }
