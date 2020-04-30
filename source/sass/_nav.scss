@@ -1,0 +1,30 @@
+.hamburger {
+  display: none;
+}
+
+nav {
+  height: 62px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  width: 100%;
+  position: absolute;
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-top: 21px;
+
+    &__item {
+      list-style-type: none;
+    }
+
+    &__link {
+      text-decoration: none;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 32px;
+      color: #ffffff;
+      opacity: 0.7;
+    }
+  }
+}

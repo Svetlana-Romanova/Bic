@@ -1,0 +1,31 @@
+.facts {
+  min-height: 503px;
+  padding-top: 150px;
+  text-align: center;
+
+  &__header {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  &__number {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 38px;
+    color: $main_color;
+  }
+
+  &__descr {
+    padding-top: 14px;
+  }
+}
