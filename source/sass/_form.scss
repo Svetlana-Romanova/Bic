@@ -1,0 +1,37 @@
+.form__info {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 28px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.form__main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.form__input {
+  height: 48px;
+  width: 327px;
+  border: 1px solid #c9ccd4;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 0 30px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #1c1c1c;
+}
+
+.form__btn {
+  height: 51px;
+  padding: 0 43px;
+  background: $main_color;
+  border: 1px solid $main_color;
+  border-radius: 6px;
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  color: #000000;
+}

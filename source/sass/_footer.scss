@@ -1,75 +1,72 @@
 .footer {
   min-height: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  &__info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.footer__header {
+  padding-top: 249px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.footer__subheader {
+  margin: 42px 0;
+  font-size: 17px;
+  line-height: 31px;
+  text-align: center;
+  font-style: normal;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.footer__map {
+  text-align: center;
+}
+
+.footer__contacts {
+  margin-top: 43px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__link {
+  padding-left: 15px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.footer__email {
+  position: relative;
+  padding-right: 120px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -21px;
+    top: 7px;
+    width: 30px;
+    height: 19px;
+    background: url("/img/icon-mail.svg") center center/cover no-repeat;
   }
+}
 
-  &__header {
-    padding-top: 249px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 30px;
-  }
+.footer__phone {
+  position: relative;
 
-  &__subheader {
-    margin: 42px 0;
-    font-size: 17px;
-    line-height: 31px;
-    text-align: center;
-    font-style: normal;
-    color: rgba(0, 0, 0, 0.7);
-  }
-
-  &__map {
-    text-align: center;
-  }
-
-  &__contacts {
-    margin-top: 43px;
-    display: flex;
-    justify-content: center;
-  }
-
-  &__link {
-    padding-left: 15px;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 32px;
-    color: rgba(0, 0, 0, 0.5);
-  }
-
-  &__email {
-    position: relative;
-    padding-right: 120px;
-
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      left: -21px;
-      top: 7px;
-      width: 30px;
-      height: 19px;
-      background: url("/img/icon-mail.svg") center center/cover no-repeat;
-    }
-  }
-
-  &__phone {
-    position: relative;
-
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      left: -15px;
-      top: 4px;
-      width: 21px;
-      height: 21px;
-      background: url("/img/icon-phone.svg") center center/cover no-repeat;
-    }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -15px;
+    top: 4px;
+    width: 21px;
+    height: 21px;
+    background: url("/img/icon-phone.svg") center center/cover no-repeat;
   }
 }
