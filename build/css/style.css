@@ -70,6 +70,7 @@ html {
 .promo {
   min-height: 825px;
   background: url("/img/Bike@1x.jpg") center center/cover no-repeat;
+  background-color: #131314;
   padding-top: 62px; }
 
 .promo__descr {
@@ -119,17 +120,16 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 20px; }
-
-.form__input {
-  height: 48px;
-  width: 327px;
-  border: 1px solid #c9ccd4;
-  border-radius: 6px;
-  margin-bottom: 20px;
-  padding: 0 30px;
-  font-size: 15px;
-  line-height: 24px;
-  color: #1c1c1c; }
+  .form__main input {
+    height: 48px;
+    width: 327px;
+    border: 1px solid #c9ccd4;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    padding: 0 30px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #1c1c1c; }
 
 .form__btn {
   height: 51px;
