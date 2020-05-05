@@ -1,0 +1,97 @@
+.bicycles {
+  min-height: 1038px;
+  background-color: #f6f7f9;
+}
+
+.bicycles__header {
+  text-align: center;
+  padding-top: 150px;
+  margin: 0;
+}
+
+.bicycles__item {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 35px;
+  
+  &--one {
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 160px;
+      left: -60px;
+      width: 180px;
+      height: 180px;
+      background: url("/img/figure1.png") center center/cover no-repeat;
+    }
+  }
+
+  &--two {
+    position: relative;
+    margin: 0 50px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 25px;
+      left: -14px;
+      width: 37px;
+      height: 37px;
+      background: url("/img/figure2.png") center center/cover no-repeat;
+      z-index: 1;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 10px;
+      right: -17px;
+      width: 37px;
+      height: 37px;
+      background: url("/img/figure3.png") center center/cover no-repeat;
+      z-index: 1;
+    }
+  }
+
+  &--three {
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -34px;
+      right: -36px;
+      width: 95px;
+      height: 95px;
+      background: url("/img/figure4.png") center center/cover no-repeat;
+      z-index: 1;
+    }
+  }
+}
+
+.bicycles__img {
+  position: relative;
+
+  &--two {
+    top: 36px;
+  }
+}
+
+.bicycles__subheader {
+  padding-top: 25px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+
+  &--two {
+    position: relative;
+    top: 36px;
+  }
+}
