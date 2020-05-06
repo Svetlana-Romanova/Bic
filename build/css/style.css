@@ -257,6 +257,48 @@ html {
     position: relative;
     top: 36px; }
 
+.video {
+  min-height: 706px;
+  background-color: #131314; }
+
+.video__header {
+  margin: 0;
+  padding-top: 119px;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #FFFFFF; }
+
+.video__subheader {
+  padding-top: 18px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #FFFFFF;
+  opacity: 0.7; }
+
+.video__img {
+  position: relative; }
+
+.video__player {
+  position: absolute;
+  padding-top: 56px; }
+
+.video__btn {
+  position: absolute;
+  left: 50%;
+  top: 290px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 23px;
+  border-radius: 100%;
+  background-color: #0ad9c6;
+  cursor: pointer; }
+  .video__btn:active {
+    background-color: #00BFC6; }
+
 .footer {
   min-height: 1100px;
   display: -webkit-box;
