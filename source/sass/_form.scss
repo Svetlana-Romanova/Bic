@@ -1,4 +1,5 @@
 .form__info {
+  max-width: 325px;
   font-weight: 600;
   font-size: 17px;
   line-height: 28px;
@@ -13,7 +14,7 @@
 
   input {
     height: 48px;
-    width: 327px;
+    width: 270px;
     border: 1px solid #c9ccd4;
     border-radius: 6px;
     margin-bottom: 20px;
@@ -34,4 +35,8 @@
   font-weight: 600;
   font-size: 15px;
   color: #000000;
+
+  &:hover {
+    background-color: #0cf5de;
+  }
 }

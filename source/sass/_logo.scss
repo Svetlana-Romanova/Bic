@@ -1,3 +1,7 @@
+.logo {
+  width: 360px;
+}
+
 .logo__hamburger {
   display: none;
 }
@@ -12,6 +16,7 @@
 }
 
 .logo__subheader {
+  max-width: 381px;
   padding-top: 24px;
   font-weight: 300;
   font-size: 20px;
