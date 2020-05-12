@@ -384,7 +384,46 @@ button {
   .container {
     max-width: 100%; }
   .nav {
+    position: fixed;
+    z-index: 5;
+    overflow-y: auto;
+    min-height: 100%; }
+  .nav__list {
     display: none; }
+    .nav__list--adaptiv {
+      display: block;
+      position: absolute;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      top: 0;
+      right: 0;
+      width: 320px;
+      padding: 70px 0;
+      background-color: #ffffff; }
+  .nav__item--adaptiv {
+    position: relative;
+    padding: 16px;
+    margin: 30px 0;
+    background-color: #f6f6f6; }
+    .nav__item--adaptiv::after {
+      content: "";
+      display: block;
+      position: absolute;
+      right: 25px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      width: 12px;
+      height: 14px;
+      background: url("/img/arr.svg") center center/cover no-repeat; }
+  .nav__link--adaptiv {
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    color: #48494d;
+    opacity: inherit; }
   .promo {
     background-image: none;
     background-color: #ffffff;
@@ -417,11 +456,12 @@ button {
     line-height: 32px;
     text-align: center; }
   .logo__img {
-    padding-top: 20px;
+    padding-top: 90px;
     padding-left: 20px; }
   .logo__hamburger {
-    display: block;
-    position: absolute;
+    display: none;
+    z-index: 5;
+    position: fixed;
     right: 0;
     top: 0;
     width: 26px;
@@ -430,22 +470,25 @@ button {
     background-color: #0ad9c6; }
     .logo__hamburger span {
       display: block;
-      height: 2px;
+      height: 1px;
       width: 100%;
       background-color: #000000;
-      margin-bottom: 2px;
+      margin-bottom: 5px;
       -webkit-transition: 0.5s all;
       transition: 0.5s all; }
-    .logo__hamburger--active span {
-      margin-bottom: -2px; }
-      .logo__hamburger--active span:nth-child(1) {
-        -webkit-transform: rotate(-45deg);
-                transform: rotate(-45deg); }
-      .logo__hamburger--active span:nth-child(2) {
-        display: none; }
-      .logo__hamburger--active span:nth-child(3) {
-        -webkit-transform: rotate(45deg);
-                transform: rotate(45deg); }
+    .logo__hamburger--open {
+      background-color: #ffffff; }
+      .logo__hamburger--open span {
+        margin-bottom: -1px;
+        background-color: rgba(20, 21, 23, 0.2); }
+        .logo__hamburger--open span:nth-child(1) {
+          -webkit-transform: rotate(-45deg);
+                  transform: rotate(-45deg); }
+        .logo__hamburger--open span:nth-child(2) {
+          display: none; }
+        .logo__hamburger--open span:nth-child(3) {
+          -webkit-transform: rotate(45deg);
+                  transform: rotate(45deg); }
   .form {
     padding: 70px 0;
     margin: 0 auto; }
