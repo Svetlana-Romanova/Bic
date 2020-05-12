@@ -57,7 +57,8 @@ button {
   padding: 21px 20px 9px 20px; }
 
 .nav__item {
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 0 10px; }
 
 .nav__link {
   text-decoration: none;
@@ -390,6 +391,13 @@ button {
     min-height: 100%; }
   .nav__list {
     display: none; }
+    .nav__list--nojs {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
     .nav__list--adaptiv {
       display: block;
       position: absolute;

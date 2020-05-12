@@ -31,6 +31,7 @@ function closeHamburger() {
   nav.classList.remove('nav__list--adaptiv');
 }
 
+nav.classList.remove('nav__list--nojs');
 logoImg.style.padding = '20px';
 logoHamburger.style.display = 'block';
 
@@ -39,5 +40,3 @@ hamburger.addEventListener('click', openHamburger);
 navLink.forEach(function (item) {
   item.addEventListener('click', closeHamburger);
 });
-
-

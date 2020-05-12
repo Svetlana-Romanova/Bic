@@ -13,6 +13,11 @@
   .nav__list {
     display: none;
 
+    &--nojs {
+      display: flex;
+      justify-content: space-between;
+    }
+
     &--adaptiv {
       display: block;
       position: absolute;
