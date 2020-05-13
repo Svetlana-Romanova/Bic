@@ -2,31 +2,36 @@
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
   font-weight: 600;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff");
   font-weight: 300;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
   font-weight: bold;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
   font-family: "Overpass";
   src: url("../fonts/Overpass-SemiBold.woff2") format("woff2"), url("../fonts/Overpass-SemiBold.woff") format("woff");
   font-weight: 600;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 html {
   font-family: "Open Sans", "Arial", sans-serif; }
@@ -138,6 +143,15 @@ button {
     font-size: 15px;
     line-height: 24px;
     color: #1c1c1c; }
+    .form__main input:hover {
+      background-color: #e7ebd3; }
+    .form__main input:focus {
+      -webkit-box-shadow: 0 0 0 3px #55752d;
+              box-shadow: 0 0 0 3px #55752d; }
+  .form__main .error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px; }
 
 .form__btn {
   height: 51px;
