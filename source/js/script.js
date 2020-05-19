@@ -34,7 +34,8 @@ function ready() {
 
   nav.classList.remove('nav__list--nojs');
   logoImg.style.padding = '20px';
-  logoHamburger.style.display = 'block';
+
+  logoHamburger.classList.add('logo__hamburger--adaptiv');
 
   hamburger.addEventListener('click', openHamburger);
 
@@ -47,8 +48,7 @@ function ready() {
   $('#form').validate({
     rules: {
       name: {
-        required: true,
-        minlength: 5
+        required: true
       },
       phone: {
         required: true,
@@ -56,8 +56,7 @@ function ready() {
     },
     messages: {
       name: {
-        required: 'Поле имя обязательно для заполнения',
-        minlength: jQuery.validator.format('Длина имени должна быть больше {0} символов')
+        required: 'Поле обязательно для заполнения'
       },
       phone: {
         required: 'Введите номер телефона',

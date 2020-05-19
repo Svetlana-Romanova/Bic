@@ -1,23 +1,22 @@
 .footer {
-  min-height: 1100px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .footer__header {
-  padding-top: 249px;
+  padding-top: 206px;
   text-align: center;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 26px;
   line-height: 30px;
 }
 
 .footer__subheader {
-  max-width: 555px;
-  margin: 42px 0;
-  font-size: 17px;
-  line-height: 31px;
+  max-width: 420px;
+  margin: 30px 0;
+  font-size: 13px;
+  line-height: 27px;
   text-align: center;
   font-style: normal;
   color: rgba(0, 0, 0, 0.7);
@@ -28,7 +27,7 @@
 }
 
 .footer__contacts {
-  margin-top: 43px;
+  margin: 20px 0;
   display: flex;
   justify-content: center;
 }
@@ -36,7 +35,7 @@
 .footer__link {
   padding-left: 15px;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 32px;
   color: rgba(0, 0, 0, 0.5);
 }

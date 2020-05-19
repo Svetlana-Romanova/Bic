@@ -1,6 +1,5 @@
 .promo {
-  min-height: 825px;
-  background: url("/img/Bike@1x.jpg") center center/cover no-repeat;
+  background: url("/img/Bike@1x.jpg") top center/contain no-repeat;
   background-color: #131314;
   padding-top: 62px;
 }
@@ -9,5 +8,5 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 825px;
+  min-height: 619px;
 }

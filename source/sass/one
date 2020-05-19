@@ -1,0 +1,167 @@
+
+@media (max-width: 767px) {
+  .logo {
+    min-height: 355px;
+    background: url("/img/Bike@1x.jpg") center center/cover no-repeat;
+  }
+
+  .logo__subheader {
+    max-width: 435px;
+    margin: 0 auto;
+    padding: 20px 25px;
+  }
+
+  .form__info {
+    max-width: 334px;
+  }
+
+  .form__main {
+    padding-top: 22px;
+  }
+
+  .facts {
+    padding: 41px 15px;
+    padding-top: 0;
+  }
+
+  .facts__header {
+    padding-top: 8px;
+  }
+
+  .facts__list {
+    justify-content: center;
+  }
+
+  .facts__item {
+    padding: 30px 21px;
+
+  }
+
+  .facts__number {
+    line-height: 32px;
+  }
+
+  .facts__descr {
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .bicycles {
+    padding: 62px 25px 17px 25px;
+  }
+
+  .bicycles__header {
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  .bicycles__item {
+    padding-bottom: 0;
+
+    &--one {
+      max-width: 278px;
+      padding: 0 25px;
+
+      &::before {
+        bottom: 24px;
+        left: -12px;
+      }
+    }
+
+    &--two {
+      max-width: 278px;
+      padding: 0 25px;
+    }
+
+    &--three {
+      max-width: 244px;
+      padding: 56px 0;
+      top: inherit;
+
+      &::after {
+        top: 36px;
+        right: -60px;
+      }
+    }
+  }
+
+  .bicycles__border {
+    border-radius: 5%;
+    overflow: hidden;
+    height: 312px;
+    min-width: 280px;
+}
+
+  .bicycles__img {
+    height: auto;
+    width: 100%;
+    margin: -65px 0 0 0;
+  }
+
+  .video__header {
+    font-size: 24px;
+  }
+
+  .bicycles__subheader {
+    padding-top: 22px;
+    font-size: 23px;
+  }
+
+  .video {
+    min-height: 429px;
+  }
+
+  .video__subheader {
+    padding: 20px 16px;
+    font-size: 18px;
+    line-height: 31px;
+  }
+
+  .video__player {
+    width: 528px;
+    height: 268px;
+  }
+
+  .video__btn {
+    top: 123px;
+    padding: 34px;
+  }
+
+  .footer {
+    padding: 35px 0;
+  }
+
+  .footer__header {
+    padding-top: 126px;
+    font-size: 26px;
+  }
+
+  .footer__subheader {
+    font-size: 17px;
+    margin: 25px 16px 20px 16px;
+  }
+
+  .footer__map {
+    width: 729px;
+    height: 573px;
+  }
+
+  .footer__contacts {
+    flex-direction: column;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+
+  .footer__email {
+    padding-right: 0;
+  }
+
+  .footer__phone {
+    padding-top: 20px;
+    margin: 0 auto;
+
+    &::before {
+      margin-top: 20px;
+    }
+  }
+}
