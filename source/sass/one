@@ -165,3 +165,7 @@
     }
   }
 }
+
+  background: url("../img/bike@1x.jpg") top center/contain no-repeat;
+
+    background: url("../img/bike@1x.jpg") center center/cover no-repeat;
