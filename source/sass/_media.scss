@@ -74,9 +74,8 @@
   }
 
   .logo {
-    // width: 100%;
     min-height: 340px;
-    background: url("/img/Bike@1x.jpg") center center/cover no-repeat;
+    background: url("../img/bike@1x.jpg") center center/cover no-repeat;
     background-color: #131314;
   }
 
@@ -101,7 +100,6 @@
   }
 
   .logo__hamburger {
-
     &--adaptiv {
       display: block;
       z-index: 5;
@@ -317,22 +315,22 @@
     font-size: 15px;
   }
 
-.form__main {
-  padding-top: 0;
+  .form__main {
+    padding-top: 0;
 
-  input {
-    width: 198px;
-    height: 37px;
-    font-size: 12px;
+    input {
+      width: 198px;
+      height: 37px;
+      font-size: 12px;
+    }
   }
-}
 
-.form__btn {
-  width: 250px;
-  height: 44px;
-  font-weight: 500;
-  font-size: 13px;
-}
+  .form__btn {
+    width: 250px;
+    height: 44px;
+    font-weight: 500;
+    font-size: 13px;
+  }
 
   .facts {
     padding: 35px 15px;
@@ -406,7 +404,7 @@
     overflow: hidden;
     height: 250px;
     max-width: 230px;
-}
+  }
 
   .bicycles__img {
     height: auto;
@@ -421,7 +419,7 @@
 
   .video {
     min-height: 320px;
-}
+  }
 
   .video__header {
     font-size: 24px;

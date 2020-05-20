@@ -6,7 +6,7 @@ var navItem = document.querySelectorAll('.nav__item');
 var navLink = document.querySelectorAll('.nav__link');
 var logoImg = document.querySelector('.logo__img');
 var logoHamburger = document.querySelector('.logo__hamburger');
-var form = document.getElementById('form');
+// var form = document.getElementById('form');
 
 function ready() {
   function openHamburger() {
@@ -43,26 +43,26 @@ function ready() {
     item.addEventListener('click', closeHamburger);
   });
 
-  $('input[name=phone]').mask('+7 (999) 999-99-99');
+  // $('input[name=phone]').mask('+7 (999) 999-99-99');
 
-  $('#form').validate({
-    rules: {
-      name: {
-        required: true
-      },
-      phone: {
-        required: true,
-      }
-    },
-    messages: {
-      name: {
-        required: 'Поле обязательно для заполнения'
-      },
-      phone: {
-        required: 'Введите номер телефона',
-      }
-    }
-  });
+  // $('#form').validate({
+  //   rules: {
+  //     name: {
+  //       required: true
+  //     },
+  //     phone: {
+  //       required: true,
+  //     }
+  //   },
+  //   messages: {
+  //     name: {
+  //       required: 'Поле обязательно для заполнения'
+  //     },
+  //     phone: {
+  //       required: 'Введите номер телефона',
+  //     }
+  //   }
+  // });
 }
 
 document.addEventListener('DOMContentLoaded', ready);
