@@ -76,7 +76,6 @@ button {
     color: #0ad9c6; }
 
 .promo {
-  background: url("../img/bike@1x.jpg") top center/contain no-repeat;
   background-color: #131314;
   padding-top: 62px; }
 
@@ -475,7 +474,6 @@ button {
             align-items: initial; }
   .logo {
     min-height: 340px;
-    background: url("../img/bike@1x.jpg") center center/cover no-repeat;
     background-color: #131314; }
   .logo__header {
     padding-top: 84px;
