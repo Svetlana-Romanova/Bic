@@ -41,9 +41,9 @@ function ready() {
   navLink.forEach(function (item) {
     item.addEventListener('click', closeHamburger);
   });
-  /* eslint-disable-next-line */
+
   $('input[name=phone]').mask('+7 (999) 999-99-99');
-  /* eslint-disable-next-line */
+
   $('#form').validate({
     rules: {
       name: {
