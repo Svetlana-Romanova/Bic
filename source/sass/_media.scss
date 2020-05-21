@@ -74,6 +74,7 @@
   }
 
   .logo {
+    max-width: 100%;
     min-height: 340px;
     background: url("../img/bike@1x.jpg") center center/cover no-repeat;
     background-color: #131314;
@@ -410,6 +411,10 @@
     height: auto;
     width: 100%;
     margin: -50px 0 0 0;
+
+    &--three {
+      margin: -93px 0 0;
+    }
   }
 
   .bicycles__subheader {

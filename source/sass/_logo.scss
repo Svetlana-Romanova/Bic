@@ -1,4 +1,5 @@
 .logo {
+  max-width: 48%;
   padding-left: 11px;
   display: flex;
   flex-direction: column;
@@ -18,7 +19,6 @@
 }
 
 .logo__subheader {
-  max-width: 381px;
   padding-top: 24px;
   font-weight: 300;
   font-size: 20px;

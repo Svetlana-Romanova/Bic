@@ -17,13 +17,10 @@
   padding-bottom: 21px;
 
   &--one {
-    position: relative;
-    margin: 0 25px;
+    @include bicycles;
 
     &::before {
-      content: "";
-      display: block;
-      position: absolute;
+      @include pseudo;
       top: 141px;
       left: -53px;
       width: 135px;
@@ -33,13 +30,10 @@
   }
 
   &--two {
-    position: relative;
-    margin: 0 25px;
+    @include bicycles;
 
     &::before {
-      content: "";
-      display: block;
-      position: absolute;
+      @include pseudo;
       top: 25px;
       left: -14px;
       width: 37px;
@@ -49,9 +43,7 @@
     }
 
     &::after {
-      content: "";
-      display: block;
-      position: absolute;
+      @include pseudo;
       bottom: 10px;
       right: -17px;
       width: 37px;
@@ -62,13 +54,10 @@
   }
 
   &--three {
-    position: relative;
-    margin: 0 25px;
+    @include bicycles;
 
     &::after {
-      content: "";
-      display: block;
-      position: absolute;
+      @include pseudo;
       top: -29px;
       right: -29px;
       width: 80px;
