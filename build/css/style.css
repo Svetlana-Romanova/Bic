@@ -229,6 +229,9 @@ button {
           justify-content: center;
   padding-top: 43px;
   padding-bottom: 21px; }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .bicycles__item {
+      overflow: hidden; } }
   .bicycles__item--one {
     position: relative;
     margin: 0 25px;

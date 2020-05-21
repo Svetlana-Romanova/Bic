@@ -15,6 +15,9 @@
   justify-content: center;
   padding-top: 43px;
   padding-bottom: 21px;
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    overflow: hidden;
+  }
 
   &--one {
     @include bicycles;
