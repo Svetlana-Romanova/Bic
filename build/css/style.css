@@ -43,6 +43,9 @@ html {
 button {
   cursor: pointer; }
 
+.visually-hidden {
+  display: none; }
+
 .nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   width: 100%;
@@ -106,7 +109,7 @@ button {
 .logo__hamburger {
   display: none; }
 
-.logo__header {
+.logo h2 {
   margin: 0;
   padding-top: 13px;
   font-weight: bold;
@@ -227,8 +230,8 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 43px;
-  padding-bottom: 21px; }
+  margin-top: 43px;
+  margin-bottom: 21px; }
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     .bicycles__item {
       overflow: hidden; } }
@@ -341,6 +344,10 @@ button {
   .video__btn:active {
     background-color: #00bfc6; }
 
+.video__play {
+  width: 16px;
+  height: 16px; }
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -399,7 +406,7 @@ button {
     top: 7px;
     width: 30px;
     height: 19px;
-    background: url("/img/icon-mail.svg") center center/cover no-repeat; }
+    background: url("/img/sprite.svg#icon-mail") center center/cover no-repeat; }
 
 .footer__phone {
   position: relative; }
@@ -421,16 +428,16 @@ button {
     z-index: 5;
     overflow-y: auto;
     min-height: 100%; }
+    .nav--nojs {
+      position: relative;
+      border: none; }
   .nav__list {
     display: none; }
     .nav__list--nojs {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between; }
-    .nav__list--adaptiv {
+      display: block;
+      position: relative;
+      background-color: #131314; }
+    .nav__list--adaptive {
       display: block;
       position: absolute;
       -webkit-box-orient: vertical;
@@ -442,12 +449,14 @@ button {
       width: 320px;
       padding: 70px 0;
       background-color: #ffffff; }
-  .nav__item--adaptiv {
+  .nav__item--nojs {
+    text-align: center; }
+  .nav__item--adaptive {
     position: relative;
     padding: 16px;
     margin: 30px 0;
     background-color: #f6f6f6; }
-    .nav__item--adaptiv::after {
+    .nav__item--adaptive::after {
       content: "";
       display: block;
       position: absolute;
@@ -458,7 +467,7 @@ button {
       width: 12px;
       height: 14px;
       background: url("/img/arr.svg") center center/cover no-repeat; }
-  .nav__link--adaptiv {
+  .nav__link--adaptive {
     display: block;
     font-size: 20px;
     line-height: 28px;
@@ -484,7 +493,7 @@ button {
     min-height: 340px;
     background: url("../img/bike@1x.jpg") center center/cover no-repeat;
     background-color: #131314; }
-  .logo__header {
+  .logo h2 {
     padding-top: 84px;
     font-size: 30px;
     line-height: 42px;
@@ -496,13 +505,13 @@ button {
     line-height: 32px;
     text-align: center; }
   .logo__img {
-    padding-top: 90px;
-    padding-left: 20px; }
-  .logo__hamburger--adaptiv {
+    margin: auto;
+    padding-top: 15px; }
+  .logo__hamburger--adaptive {
     display: block;
     z-index: 5;
     position: fixed;
-    right: 0;
+    right: 10px;
     top: 0;
     width: 26px;
     height: 12px;
@@ -621,9 +630,7 @@ button {
 @media (max-width: 767px) {
   .logo {
     min-height: 323px; }
-  .logo__img {
-    padding: 35px 0 0 0; }
-  .logo__header {
+  .logo h2 {
     padding-top: 37px;
     font-size: 24px;
     line-height: 34px; }

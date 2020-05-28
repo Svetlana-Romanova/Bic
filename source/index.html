@@ -5,17 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Стартовый шаблон</title>
-  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="preload" href="fonts/OpenSans-Bold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Light.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-SemiBold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Overpass-SemiBold.woff" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Overpass-SemiBold.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-  <nav class="nav container">
+<body id="body">
+  <nav class="nav nav--nojs container">
       <ul class="nav__list nav__list--nojs">
-        <li class="nav__item"><a href="#facts" class="nav__link">О нас</a></li>
-        <li class="nav__item"><a href="#bicycles" class="nav__link">Виды велосипедов</a></li>
-        <li class="nav__item"><a href="#video" class="nav__link">Видео про велосипеды</a></li>
-        <li class="nav__item"><a href="#footer" class="nav__link">Контакты</a></li>
+        <li class="nav__item nav__item--nojs"><a href="#facts" class="nav__link">О нас</a></li>
+        <li class="nav__item nav__item--nojs"><a href="#bicycles" class="nav__link">Виды велосипедов</a></li>
+        <li class="nav__item nav__item--nojs"><a href="#video" class="nav__link">Видео про велосипеды</a></li>
+        <li class="nav__item nav__item--nojs"><a href="#footer" class="nav__link">Контакты</a></li>
       </ul>
   </nav>
   <section class="promo">
@@ -29,23 +38,25 @@
               <span></span>
             </div>
           </div>
-          <h1 class="logo__header">Мы продаем велосипеды</h1>
+          <h2>Мы продаем велосипеды</h2>
           <div class="logo__subheader">Наш магазин отбирает только самые лучшие велосипеды для продажи</div>
         </div>
         <div class="form">
           <div class="form__info">Заполните поля ниже и мы подберем велосипед Вашей мечты</div>
           <form class="form__main" action="#" id="form">
-            <input class="form__input" name="name" placeholder="Введите Ваше Имя" type="text">
-            <input id="input__name" class="form__input" name="phone" placeholder="Введите Ваш номер телефона" type="text">
-            <button class="form__btn">Подобрать велосипед мечты</button>
+            <label class="visually-hidden" for="user-name">Введите Ваше Имя</label>
+            <input id="user-name" name="name" placeholder="Введите Ваше Имя" type="text">
+            <label class="visually-hidden" for="user-phone">Введите Ваш номер телефона</label>
+            <input id="user-phone" name="phone" placeholder="Введите Ваш номер телефона" type="text">
+            <button class="form__btn" type="submit">Подобрать велосипед мечты</button>
           </form>
         </div>
       </div>
   </section>
   <section class="facts" id="facts">
-      <h1 class="facts__header">
+      <h2 class="facts__header">
         Несколько фактов о нас
-      </h1>
+      </h2>
       <div class="facts__list">
         <div class="facts__item">
           <div class="facts__number">01</div>
@@ -66,21 +77,21 @@
       </div>
   </section>
   <section class="bicycles" id="bicycles">
-    <h1 class="bicycles__header">Виды велосипедов</h1>
+    <h2 class="bicycles__header">Виды велосипедов</h2>
     <div class="bicycles__item">
-      <div class="bicycles__item--one">
+      <div class="bicycles__item bicycles__item--one">
         <div class="bicycles__border">
           <img class="bicycles__img bicycles__img--one" src="img/bike-mini1@1x.jpg" alt="Горный велосипед" width="280" height="420" srcset="img/bike-mini1@2x.jpg">
         </div>
         <div class="bicycles__subheader">Дорожный велосипед</div>
       </div>
-      <div class="bicycles__item--two">
+      <div class="bicycles__item bicycles__item--two">
         <div class="bicycles__border">
           <img class="bicycles__img bicycles__img--two" src="img/bike-mini2@1x.jpg" alt="Дорожный велосипед" width="280" height="470" srcset="img/bike-mini2@2x.jpg">
         </div>
         <div class="bicycles__subheader bicycles__subheader--two">Горный велосипед</div>
       </div>
-        <div class="bicycles__item--three">
+        <div class="bicycles__item bicycles__item--three">
           <div class="bicycles__border">
             <img class="bicycles__img bicycles__img--three" src="img/bike-mini3@1x.jpg" alt="Детский велосипед" width="280" height="420" srcset="img/bike-mini3@2x.jpg">
           </div>
@@ -89,12 +100,15 @@
     </div>
   </section><section class="video" id="video">
     <div class="video__descr container">
-      <h1 class="video__header">Видео про велосипеды</h1>
+      <h2 class="video__header">Видео про велосипеды</h2>
       <div class="video__subheader">В этом видео мы подробно расскажем про<br>особенности выбора велосипеда для себя. </div>
       <div class="video__img">
         <img class="video__player" src="img/bike2@1x.jpg" alt="Основы выбора велосипеда" width="769" height="433" srcset="img/bike2@2x.jpg">
-        <button class="video__btn">
-          <img src="img/icon-play.svg" alt="кнопка play">
+        <button class="video__btn" type="button">
+          <svg class="video__play" aria-label="Просмотр видео о велосипедах">
+            <use xlink:href="/img/sprite.svg#icon-play"></use>
+          </svg>
+          <!-- <img src="/img/sprite.svg#icon-play" alt="кнопка play"> -->
         </button>
       </div>
     </div>

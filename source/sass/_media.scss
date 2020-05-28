@@ -8,17 +8,23 @@
     z-index: 5;
     overflow-y: auto;
     min-height: 100%;
+
+    &--nojs {
+      position: relative;
+      border: none;
+    }
   }
 
   .nav__list {
     display: none;
 
     &--nojs {
-      display: flex;
-      justify-content: space-between;
+      display: block;
+      position: relative;
+      background-color: #131314;
     }
 
-    &--adaptiv {
+    &--adaptive {
       display: block;
       position: absolute;
       flex-direction: column;
@@ -31,7 +37,11 @@
   }
 
   .nav__item {
-    &--adaptiv {
+    &--nojs {
+      text-align: center;
+    }
+
+    &--adaptive {
       position: relative;
       padding: 16px;
       margin: 30px 0;
@@ -52,7 +62,7 @@
   }
 
   .nav__link {
-    &--adaptiv {
+    &--adaptive {
       display: block;
       font-size: 20px;
       line-height: 28px;
@@ -80,7 +90,7 @@
     background-color: #131314;
   }
 
-  .logo__header {
+  .logo h2 {
     padding-top: 84px;
     font-size: 30px;
     line-height: 42px;
@@ -96,16 +106,16 @@
   }
 
   .logo__img {
-    padding-top: 90px;
-    padding-left: 20px;
+    margin: auto;
+    padding-top: 15px;
   }
 
   .logo__hamburger {
-    &--adaptiv {
+    &--adaptive {
       display: block;
       z-index: 5;
       position: fixed;
-      right: 0;
+      right: 10px;
       top: 0;
       width: 26px;
       height: 12px;
@@ -290,11 +300,7 @@
     min-height: 323px;
   }
 
-  .logo__img {
-    padding: 35px 0 0 0;
-  }
-
-  .logo__header {
+  .logo h2 {
     padding-top: 37px;
     font-size: 24px;
     line-height: 34px;
