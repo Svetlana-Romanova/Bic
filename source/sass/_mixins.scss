@@ -3,9 +3,3 @@
   display: $display;
   position: $pos;
 }
-
-@mixin bicycles($position: relative, $margin:0 25px, $display: inline-block) {
-  position: $position;
-  margin: $margin;
-  display: $display;
-}

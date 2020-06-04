@@ -50,8 +50,10 @@ function ready() {
     item.addEventListener('click', closeHamburger);
   });
 
+  // eslint-disable-next-line no-undef
   $('input[name=phone]').mask('+7 (999) 999-99-99');
 
+  // eslint-disable-next-line no-undef
   $('#form').validate({
     rules: {
       name: {
@@ -71,6 +73,7 @@ function ready() {
     }
   });
 
+  // eslint-disable-next-line no-undef
   var custom2 = new Scrollbot('#body', 10).setStyle({
     'background': 'none',
     'z-index': '2'

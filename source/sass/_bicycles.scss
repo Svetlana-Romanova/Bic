@@ -1,45 +1,48 @@
 .bicycles {
-  padding: 120px 50px;
+  padding: 120px 50px 186px;
   background-color: #f6f7f9;
 }
 
 .bicycles__header {
-  text-align: center;
+  padding-top: 29px;
+  padding-bottom: 48px;
   margin: 0;
-  font-size: 24px;
+  text-align: center;
+  font-size: 30px;
   font-weight: 600;
 }
 
-.bicycles__item {
+.bicycles__list {
   display: flex;
-  justify-content: center;
-  margin-top: 43px;
-  margin-bottom: 21px;
+  justify-content: space-evenly;
+  padding: 0 43px;
+}
 
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    overflow: hidden;
-  }
+.bicycles__item {
+  margin: 0 10px;
 
   &--one {
-    @include bicycles;
+    position: relative;
+    padding-top: 5px;
+    padding-left: 26px;
 
     &::before {
       @include pseudo;
-      top: 141px;
-      left: -53px;
-      width: 135px;
-      height: 135px;
+      top: 27%;
+      left: -32px;
+      width: 169px;
+      height: 169px;
       background: url("/img/figure1.png") center center/cover no-repeat;
     }
   }
 
   &--two {
-    @include bicycles;
+    position: relative;
 
     &::before {
       @include pseudo;
-      top: 25px;
-      left: -14px;
+      top: 20px;
+      left: -9px;
       width: 37px;
       height: 37px;
       background: url("/img/figure2.png") center center/cover no-repeat;
@@ -48,24 +51,24 @@
 
     &::after {
       @include pseudo;
-      bottom: 10px;
-      right: -17px;
-      width: 37px;
-      height: 37px;
+      bottom: -4px;
+      right: -27px;
+      width: 45px;
+      height: 45px;
       background: url("/img/figure3.png") center center/cover no-repeat;
       z-index: 1;
     }
   }
 
   &--three {
-    @include bicycles;
+    position: relative;
 
     &::after {
       @include pseudo;
-      top: -29px;
-      right: -29px;
-      width: 80px;
-      height: 80px;
+      top: -35px;
+      right: -39px;
+      width: 90px;
+      height: 90px;
       background: url("/img/figure4.png") center center/cover no-repeat;
       z-index: 1;
     }
@@ -81,14 +84,18 @@
 }
 
 .bicycles__subheader {
-  padding-top: 19px;
+  padding-top: 18px;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 34px;
   text-align: center;
 
   &--two {
     position: relative;
-    top: 23px;
+    top: 36px;
+  }
+
+  &--three {
+    border-radius: 4%;
   }
 }

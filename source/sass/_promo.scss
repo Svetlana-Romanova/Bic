@@ -1,12 +1,12 @@
 .promo {
-  background: url("../img/bike@1x.jpg") top center/contain no-repeat;
+  background: url("../img/bike@1x.jpg") top center/cover no-repeat;
   background-color: #131314;
-  padding-top: 62px;
+  padding-top: 87px;
 }
 
 .promo__descr {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  min-height: 619px;
+  min-height: 503px;
+  padding-top: 232px;
 }

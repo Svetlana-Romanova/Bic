@@ -1,23 +1,24 @@
 .video {
-  min-height: 590px;
+  min-height: 702px;
   background-color: #131314;
 }
 
 .video__header {
   margin: 0;
-  padding-top: 101px;
+  padding-top: 123px;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 30px;
   line-height: 30px;
   text-align: center;
   color: #ffffff;
 }
 
 .video__subheader {
-  padding-top: 16px;
+  padding-top: 18px;
+  padding-left: 8px;
   font-weight: 300;
-  font-size: 12px;
-  line-height: 22px;
+  font-size: 16px;
+  line-height: 28px;
   text-align: center;
   color: #ffffff;
   opacity: 0.7;
@@ -34,12 +35,13 @@
 
 .video__btn {
   position: absolute;
-  left: 50%;
-  top: 237px;
+  left: 51%;
+  top: 280px;
   transform: translateX(-50%);
   padding: 16px;
   border-radius: 100%;
   background-color: $main_color;
+  border-color: #000000;
   cursor: pointer;
 
   &:active {
@@ -48,6 +50,6 @@
 }
 
 .video__play {
-  width: 16px;
-  height: 16px;
+  width: 28px;
+  height: 28px;
 }

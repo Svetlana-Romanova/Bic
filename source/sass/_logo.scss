@@ -1,8 +1,12 @@
 .logo {
-  max-width: 48%;
-  padding-left: 11px;
+  max-width: 47%;
+  padding-left: 13px;
   display: flex;
   flex-direction: column;
+}
+
+.logo__top {
+  padding-left: 4px;
 }
 
 .logo__hamburger {
@@ -11,10 +15,10 @@
 
 .logo h2 {
   margin: 0;
-  padding-top: 13px;
+  padding-top: 29px;
   font-weight: bold;
-  font-size: 38px;
-  line-height: 54px;
+  font-size: 46px;
+  line-height: 64px;
   color: #ffffff;
 }
 
