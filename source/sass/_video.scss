@@ -36,16 +36,25 @@
 .video__btn {
   position: absolute;
   left: 51%;
-  top: 280px;
+  top: 315px;
   transform: translateX(-50%);
   padding: 16px;
   border-radius: 100%;
+  border: none;
   background-color: $main_color;
-  border-color: #000000;
   cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
 
   &:active {
     background-color: #00bfc6;
+    outline: none;
+  }
+
+  &:hover {
+    background-color: #b0e0e6;
   }
 }
 

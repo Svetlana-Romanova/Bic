@@ -27,13 +27,15 @@
 }
 
 .footer__contacts {
-  margin: 28px 0;
+  width: 92%;
+  margin: 32px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .footer__link {
   padding-left: 15px;
+  padding-right: 10px;
   text-decoration: none;
   font-size: 16px;
   line-height: 32px;
@@ -42,7 +44,7 @@
 
 .footer__email {
   position: relative;
-  padding-right: 120px;
+  // padding-right: 120px;
 
   &::before {
     content: "";

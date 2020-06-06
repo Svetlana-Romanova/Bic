@@ -38,7 +38,9 @@
 
   .nav__item {
     &--nojs {
+      max-width: 100%;
       text-align: center;
+      margin: 0 auto;
     }
 
     &--adaptive {
@@ -225,7 +227,6 @@
   }
 
   .bicycles__list {
-    flex-wrap: wrap;
     padding: 0;
   }
 
