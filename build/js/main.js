@@ -78,16 +78,4 @@ window.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
-
-  // // eslint-disable-next-line no-undef
-  // var custom2 = new Scrollbot('#body', 10).setStyle({
-  //   'background': 'none',
-  //   'z-index': '2'
-  // }, {
-  //   'background': 'black'
-  // });
-  // var psuedo = document.createElement('div');
-  // psuedo.style.cssText = 'height:100%;width:2px;left:4px;background:#808080;position:absolute;z-index:1';
-  // custom2.scrollBarHolder.appendChild(psuedo);
-
 });
