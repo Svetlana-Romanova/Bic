@@ -46,6 +46,9 @@ button {
 .visually-hidden {
   display: none; }
 
+.overflow-hidden {
+  overflow: hidden; }
+
 .nav {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   width: 100%;
@@ -453,8 +456,6 @@ button {
   .nav {
     position: fixed;
     z-index: 5;
-    overflow-y: auto;
-    min-height: 100%;
     display: none; }
     .nav--nojs {
       position: relative;
@@ -480,26 +481,28 @@ button {
       width: 320px;
       padding: 70px 0;
       background-color: #ffffff; }
-  .nav__item--nojs {
-    max-width: 100%;
-    text-align: center;
-    margin: 0 auto; }
-  .nav__item--adaptive {
-    position: relative;
-    padding: 16px;
-    margin: 30px 0;
-    background-color: #f6f6f6; }
-    .nav__item--adaptive::after {
-      content: "";
-      display: block;
-      position: absolute;
-      right: 25px;
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
-      width: 12px;
-      height: 14px;
-      background: url("/img/arr.svg") center center/cover no-repeat; }
+  .nav__item {
+    max-width: 100%; }
+    .nav__item--nojs {
+      max-width: 100%;
+      text-align: center;
+      margin: 0 auto; }
+    .nav__item--adaptive {
+      position: relative;
+      padding: 16px;
+      margin: 30px 0;
+      background-color: #f6f6f6; }
+      .nav__item--adaptive::after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: 25px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+        width: 12px;
+        height: 14px;
+        background: url("/img/arr.svg") center center/cover no-repeat; }
   .nav__link--adaptive {
     display: block;
     font-size: 20px;
@@ -692,10 +695,15 @@ button {
     margin: 17px 0; } }
 
 @media (max-width: 767px) {
+  .nav--adaptive {
+    height: 100%; }
   .nav__item {
     max-width: 100%; }
   .nav__link--adaptive {
     text-align: left; }
+  .nav__list--adaptive {
+    min-height: 100%;
+    min-width: 100%; }
   .logo {
     min-height: 387px; }
   .logo__top {

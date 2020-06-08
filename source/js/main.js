@@ -1,5 +1,6 @@
 'use strict';
 
+var body = document.querySelector('#body');
 var hamburger = document.querySelector('.logo__hamburger');
 var nav = document.querySelector('.nav');
 var navList = document.querySelector('.nav__list');
@@ -23,12 +24,15 @@ window.addEventListener('DOMContentLoaded', function () {
         item.classList.add('nav__link--adaptive');
       }
     });
+
+    body.classList.add('overflow-hidden');
   }
 
   function closeHamburger() {
     hamburger.classList.remove('logo__hamburger--open');
     nav.classList.remove('nav--adaptive');
     navList.classList.remove('nav__list--adaptive');
+    body.classList.remove('overflow-hidden');
   }
 
   function deleteNojs() {
