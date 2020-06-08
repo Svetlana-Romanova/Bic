@@ -166,10 +166,9 @@ button {
       -webkit-box-shadow: 0 0 0 3px #55752d;
               box-shadow: 0 0 0 3px #55752d; }
   .form__main .error {
-    font-size: 13px;
-    color: red;
-    text-align: center;
-    margin-bottom: 10px; }
+    color: #ff0000;
+    margin: 1px 0;
+    font-size: 14px; }
 
 .form__btn {
   height: 51px;
@@ -362,7 +361,7 @@ button {
     background-color: #00bfc6;
     outline: none; }
   .video__btn:hover {
-    background-color: #B0E0E6; }
+    background-color: #b0e0e6; }
 
 .video__play {
   width: 28px;

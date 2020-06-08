@@ -49,28 +49,30 @@ function ready() {
   navLink.forEach(function (item) {
     item.addEventListener('click', closeHamburger);
   });
-
   // eslint-disable-next-line no-undef
-  $('input[name=phone]').mask('+7 (999) 999-99-99');
-
+  jQuery(function ($) {
+    $('input[name=phone]').mask('+7 (999) 999-99-99');
+  });
   // eslint-disable-next-line no-undef
-  $('#form').validate({
-    rules: {
-      name: {
-        required: true
+  jQuery(function ($) {
+    $('#form').validate({
+      rules: {
+        name: {
+          required: true
+        },
+        phone: {
+          required: true,
+        }
       },
-      phone: {
-        required: true,
+      messages: {
+        name: {
+          required: 'Поле обязательно для заполнения'
+        },
+        phone: {
+          required: 'Введите номер телефона',
+        }
       }
-    },
-    messages: {
-      name: {
-        required: 'Поле обязательно для заполнения'
-      },
-      phone: {
-        required: 'Введите номер телефона',
-      }
-    }
+    });
   });
 
   // eslint-disable-next-line no-undef
