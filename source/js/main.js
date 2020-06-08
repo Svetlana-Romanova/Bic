@@ -5,13 +5,11 @@ var nav = document.querySelector('.nav');
 var navList = document.querySelector('.nav__list');
 var navItem = document.querySelectorAll('.nav__item');
 var navLink = document.querySelectorAll('.nav__link');
-var logoHamburger = document.querySelector('.logo__hamburger');
 
-
-function ready() {
+window.addEventListener('DOMContentLoaded', function () {
   function openHamburger() {
     hamburger.classList.toggle('logo__hamburger--open');
-
+    nav.classList.toggle('nav--adaptive');
     navList.classList.toggle('nav__list--adaptive');
 
     navItem.forEach(function (item) {
@@ -29,6 +27,7 @@ function ready() {
 
   function closeHamburger() {
     hamburger.classList.remove('logo__hamburger--open');
+    nav.classList.remove('nav--adaptive');
     navList.classList.remove('nav__list--adaptive');
   }
 
@@ -42,13 +41,14 @@ function ready() {
 
   deleteNojs();
 
-  logoHamburger.classList.add('logo__hamburger--adaptive');
+  hamburger.classList.add('logo__hamburger--adaptive');
 
   hamburger.addEventListener('click', openHamburger);
 
   navLink.forEach(function (item) {
     item.addEventListener('click', closeHamburger);
   });
+
   // eslint-disable-next-line no-undef
   jQuery(function ($) {
     $('input[name=phone]').mask('+7 (999) 999-99-99');
@@ -75,16 +75,15 @@ function ready() {
     });
   });
 
-  // eslint-disable-next-line no-undef
-  var custom2 = new Scrollbot('#body', 10).setStyle({
-    'background': 'none',
-    'z-index': '2'
-  }, {
-    'background': 'rgba(0,0,0,0)'
-  });
-  var psuedo = document.createElement('div');
-  psuedo.style.cssText = 'height:100%;width:2px;left:4px;background:#808080;position:absolute;z-index:1';
-  custom2.scrollBarHolder.appendChild(psuedo);
-}
+  // // eslint-disable-next-line no-undef
+  // var custom2 = new Scrollbot('#body', 10).setStyle({
+  //   'background': 'none',
+  //   'z-index': '2'
+  // }, {
+  //   'background': 'black'
+  // });
+  // var psuedo = document.createElement('div');
+  // psuedo.style.cssText = 'height:100%;width:2px;left:4px;background:#808080;position:absolute;z-index:1';
+  // custom2.scrollBarHolder.appendChild(psuedo);
 
-document.addEventListener('DOMContentLoaded', ready);
+});

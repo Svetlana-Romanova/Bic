@@ -54,5 +54,11 @@
 
   &:hover {
     background-color: #0cf5de;
+    outline: none;
+  }
+
+  &:active {
+    background-color: rgb(142, 240, 240);
+    outline: none;
   }
 }
